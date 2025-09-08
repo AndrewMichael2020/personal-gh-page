@@ -1,7 +1,7 @@
 ---
-title: What I bring to a team
-section_id: what-i-bring
-order: 4
+title: What I Bring To A Team
+section_id: what-i-bring-to-a-team
+order: 2
 ---
 
 * **Outcome orientation**: I focus on measurable business KPIs, clear SLAs, and demonstrable ROI for analytics investments.
