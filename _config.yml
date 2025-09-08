@@ -1,0 +1,38 @@
+# Site settings
+title: Andrew M. Ignatov - Data Engineering & Analytics Leader
+email: # Will be added via LinkedIn contact
+description: >-
+  Senior Data Solutions Engineer specializing in secure, production-grade data platforms, 
+  real-time analytics, and ML delivery. Leading cross-functional teams to turn high-volume 
+  data into trusted metrics and automated workflows.
+baseurl: ""
+url: "https://andrewmichael2020.github.io/personal-gh-page"
+
+# Author information
+author:
+  name: Andrew M. Ignatov
+  linkedin: https://www.linkedin.com/in/andrew-m-ignatov-879842146/
+
+# Build settings
+markdown: kramdown
+
+# Exclude files
+exclude:
+  - gh_copilot_instruction_andrew_site.md
+  - _image.jpg
+
+# Custom settings
+show_excerpts: false
+header_pages:
+  - index.html
+
+# SEO and social
+linkedin_username: andrew-m-ignatov-879842146
+github_username: AndrewMichael2020
+
+# Site navigation
+collections:
+  - sections
+
+# GitHub Pages settings
+repository: AndrewMichael2020/personal-gh-page
