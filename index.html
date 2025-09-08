@@ -3,7 +3,7 @@ title: Andrew M. Ihnativ
 layout: default
 ---
 
-<div class="hero-section">
+<div class="hero-section" id="home">
   <div class="hero-content">
     <img src="assets/images/profile.jpg" alt="Andrew M. Ihnativ" class="profile-image">
     <div class="hero-text">
@@ -18,6 +18,7 @@ layout: default
 
 <nav class="toc">
   <ul>
+    <li><a href="#home">Home</a></li>
     {% assign secs = site.sections | sort: "order" %}
     {% for s in secs %}
       <li><a href="#{{ s.section_id }}">{{ s.title }}</a></li>
