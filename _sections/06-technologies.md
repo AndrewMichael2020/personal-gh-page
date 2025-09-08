@@ -9,7 +9,7 @@ order: 6
 * Road-mapping for data/ML projects; iteration plans
 * Privacy/compliance scoping; cost-conscious cloud architecture & run-rate control
 * Negotiation frameworks (Harvard PON)
-* Community engagement and technical demos (no hackathon planning)
+* Community engagement and technical demos
 
 ## Core languages
 * Python 3.7–3.11
