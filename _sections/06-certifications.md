@@ -5,8 +5,8 @@ order: 6
 ---
 
 ### Microsoft
-* **Microsoft Back-End Developer Professional Certificate**
 * **Microsoft Full-Stack Developer Professional Certificate**
+* Microsoft Back-End Developer Professional Certificate
 * AZ-900 Microsoft Azure Fundamentals (full cert)
 * AI-900 Microsoft Azure AI Fundamentals (full cert)
 * DP-900 Microsoft Azure Data Fundamentals (full cert)
@@ -28,8 +28,8 @@ order: 6
 
 ### IBM
 * **IBM Full Stack Software Developer Professional Certificate**
-* **IBM DevOps and Software Engineering Professional Certificate**
-* **IBM AI Developer Professional Certificate**
+* IBM DevOps and Software Engineering Professional Certificate
+* IBM AI Developer Professional Certificate
 * **IBM RAG and Agentic AI Professional Certificate:**
   * Develop Generative AI Applications: Get Started
   * Build RAG Applications: Get Started
@@ -47,13 +47,13 @@ order: 6
   Intro to Ethical Hacking Principles; Ethical Hacking with Kali Linux; Exploitation & Pen Testing with Metasploit; Network Traffic Analysis with Wireshark; Incident Response & Defense with OpenVAS
 
 ### Redhat
-* Fundamentals of Red Hat Enterprise Linux
+* **Fundamentals of Red Hat Enterprise Linux**
 * Fundamentals of Containers, Kubernetes and OpenShift
 * Fundamentals of Ansible
 
 ### Academic & Projects
 * MIT 6.S191 (2023) Introduction to Deep Learning
-* * University of Michigan — C Programming for Everybody (Specialization: Exploring C; Programming in C; Data Structures in C; Building Objects in C)
-* Data Science Specialization
-* Mathematics for Machine Learning Specialization
-* Infectious Disease Modelling (project)
+* C Programming Specialization: Exploring C; Programming in C; Data Structures in C; Building Objects in C -- University of Michigan
+* IBM Data Science Specialization
+* Mathematics for Machine Learning Specialization -- University College London
+* Infectious Disease Modelling (project) -- University College London
