@@ -1,5 +1,5 @@
 ---
-title: Executive summary
+title: Summary
 section_id: executive-summary
 order: 1
 ---
