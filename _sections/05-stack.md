@@ -1,7 +1,7 @@
 ---
 title: Stack
-section_id: technologies
-order: 6
+section_id: stack
+order: 5
 ---
 
 ## Managerial / product stack

@@ -1,7 +1,7 @@
 ---
-title: Certifications & coursework
+title: Certifications
 section_id: certifications
-order: 7
+order: 6
 ---
 
 ## Microsoft
