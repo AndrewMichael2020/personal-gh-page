@@ -58,9 +58,9 @@ order: 5
 * Local LLM / micro and tiny OSS LLM runs (Llama-class on M2 Ultra / GCP VM, etc.)
 
 ### Agentic AI & orchestration
-* LangGraph (stateful graphs, multi-tool orchestration)
-* LangChain (RAG, tool use)
-* Langflow (DataStax) for visual pipelines as a local tool
+* LangGraph (stateful graphs; multi-agent, multi-tool orchestration including controls and recursion)
+* LangChain (RAG, tool use, as basis for more complex agentic systems)
+* Langflow (DataStax) for visual pipelines as a local tool for understanding flows and presentations
 * Fundamentals of MCP servers (Model Context Protocol)
 
 ### Healthcare interoperability (kept minimal, no terminology lists)
