@@ -138,26 +138,150 @@ title: Andrew M. Ignatov - Data Engineering & Analytics Leader
   </section>
 
   <section id="technologies" class="content-section">
-    <h2>Core technologies (concise)</h2>
-    <div class="tech-tags">
-      <span class="tech-tag">Power BI</span>
-      <span class="tech-tag">KQL</span>
-      <span class="tech-tag">Python</span>
-      <span class="tech-tag">SQL: SQL Server, MySQL, PostreSQL</span>
-      <span class="tech-tag">FastAPI and other common and custom API designs</span>
-      <span class="tech-tag">Cloud Run / Kubernetes on GCP</span>
-      <span class="tech-tag">Pub/Sub architecture for RT data</span>
-      <span class="tech-tag">BigQuery</span>
-      <span class="tech-tag">GitHub Actions</span>
-      <span class="tech-tag">Docker</span>
-      <span class="tech-tag">Kubernetes</span>
-      <span class="tech-tag">Azure (complete Fabric stack, App Service, Azure SQL, Entra ID)</span>
-      <span class="tech-tag">Row-level security</span>
-      <span class="tech-tag">Dynamic masking for sensitive data</span>
-      <span class="tech-tag">Vector search and RAG implementation</span>
-      <span class="tech-tag">Whisper/STT for workflows that include audio generation</span>
-      <span class="tech-tag">TensorFlow/Keras and LLM finetuning</span>
-      <span class="tech-tag">LangGraph/LangChain/CrewAI/BeeAI/AG2/MCP Servers</span>
+    <h2>Stack</h2>
+    
+    <div class="stack-section">
+      <h3>Managerial / product stack</h3>
+      <p>Requirements capture → KPI definition → semantic modeling</p>
+      <p>Road-mapping for data/ML projects; iteration plans</p>
+      <p>Privacy/compliance scoping; cost-conscious cloud architecture & run-rate control</p>
+      <p>Negotiation frameworks (Harvard PON)</p>
+      <p>Community engagement and technical demos (no hackathon planning)</p>
+    </div>
+
+    <div class="stack-section">
+      <h3>Core languages</h3>
+      <p>Python 3.7–3.11</p>
+      <p>SQL (T-SQL)</p>
+      <p>C#</p>
+      <p>JavaScript</p>
+      <p>Bash / Shell</p>
+    </div>
+
+    <div class="stack-section">
+      <h3>Cloud platforms (primary → secondary)</h3>
+      <p><strong>Azure:</strong> Microsoft Fabric (Lakehouse, Dataflows), App Service, Azure SQL, Entra ID, Azure OpenAI (experience/planning), Functions (evaluating), Data Factory</p>
+      <p><strong>GCP:</strong> Cloud Run, Pub/Sub, BigQuery, Google Cloud Storage, Compute Engine (DL VM), Healthcare API (FHIR), Vertex AI (evaluating)</p>
+      <p><strong>IBM Cloud / OpenShift</strong> (coursework), <strong>AWS</strong> (limited exposure)</p>
+      <p><strong>AWS:</strong> Limited exposure</p>
+    </div>
+
+    <div class="stack-section">
+      <h3>Data engineering & storage</h3>
+      <p>Lakehouse/warehouse design; partitioning, clustering, cost/perf tuning</p>
+      <p>Files/streams/APIs ingestion; contract-driven schemas; schema checks</p>
+      <p>Parquet/CSV on object storage; BigQuery datasets & streaming inserts</p>
+      <p>SQL Server; Azure SQL; PostgreSQL (planned); MySQL; SQLite; DuckDB</p>
+    </div>
+
+    <div class="stack-section">
+      <h3>Analytics, Visualization & BI</h3>
+      <p>Power BI (modeling, DAX, Power Query, RLS, printable exports)</p>
+      <p>KQL / Azure Data Explorer (Fabric Real-Time Analytics)</p>
+      <p>Jupyter (local, Codespaces); Excel (advanced)</p>
+    </div>
+
+    <div class="stack-section">
+      <h3>Real-time & streaming</h3>
+      <p>Pub/Sub → Cloud Run → BigQuery streaming</p>
+      <p>Power BI real-time tiles (push/streaming datasets)</p>
+      <p>Backpressure, sampling, idempotency; SLA-aware telemetry</p>
+      <p>KQL / notebooks for diagnostics</p>
+    </div>
+
+    <div class="stack-section">
+      <h3>ML / AI</h3>
+      <p>TensorFlow; Keras</p>
+      <p>Batch & real-time ML pipelines; feature extraction</p>
+      <p>OpenAI API (function calling); embeddings; RAG</p>
+      <p>Whisper STT; diarization/turn-taking; basic audio features</p>
+      <p>Vector search: ChromaDB</p>
+      <p>Pattern extraction: fuzzy matching; regex-based extraction</p>
+      <p>Local LLM experiments (Llama-class on M2 Ultra / GCP VM)</p>
+    </div>
+
+    <div class="stack-section">
+      <h3>Agentic AI & orchestration</h3>
+      <p>LangGraph (stateful graphs, multi-tool orchestration)</p>
+      <p>LangChain (RAG, tool use)</p>
+      <p>Langflow (DataStax) for visual pipelines</p>
+      <p>MCP servers (Model Context Protocol)</p>
+    </div>
+
+    <div class="stack-section">
+      <h3>Healthcare interoperability (kept minimal, no terminology lists)</h3>
+      <p>Meditech and Intrahealth Profile workflows</p>
+      <p>FHIR R4</p>
+      <p>Google Cloud Healthcare API (FHIR Store)</p>
+      <p>Synthea synthetic EMR (localization & module editing; FHIR bundle export/ingest)</p>
+    </div>
+
+    <div class="stack-section">
+      <h3>Backend & APIs</h3>
+      <p>FastAPI; Flask</p>
+      <p>ASP.NET Core (.NET 8) Minimal APIs; EF Core</p>
+      <p>JWT + ASP.NET Identity; role-based auth</p>
+      <p>REST / WebSocket endpoints; Postman collections</p>
+      <p>Node.js on Azure App Service (with Entra ID)</p>
+    </div>
+
+    <div class="stack-section">
+      <h3>Frontend & visualization</h3>
+      <p>Power BI dashboards (executive/shift; drill-throughs)</p>
+      <p>React (course/projects)</p>
+      <p>Blazor WebAssembly (selected projects)</p>
+      <p>Notebook visuals; ipyleaflet maps; Kepler-style outputs (non-pydeck)</p>
+    </div>
+
+    <div class="stack-section">
+      <h3>DevOps / CI/CD & platform engineering</h3>
+      <p>GitHub Actions (build, test, coverage/Cobertura, deploy)</p>
+      <p>GitHub Codespaces; DevContainers</p>
+      <p>Docker; Kubernetes (minikube/k3d); Helm; OpenShift (labs/Tekton)</p>
+      <p>Bash automation; gcloud CLI; jq; curl</p>
+      <p>Terraform (targeted, in progress)</p>
+      <p>Observability: structured logs, metrics (Prometheus/Grafana), traces</p>
+      <p>Release hardening; rollback playbooks; runbooks; SLAs/SLOs</p>
+    </div>
+
+    <div class="stack-section">
+      <h3>Privacy, security & governance</h3>
+      <p>Entra ID (Azure AD); JWT; RBAC; secrets management; least-privilege</p>
+      <p>Dynamic Data Masking; Row-Level Security; tokenization/pseudonymization</p>
+      <p>k-anonymity / l-diversity / t-closeness checks; differential-privacy concepts</p>
+      <p>Audit trails; data residency constraints (PHI/PII)</p>
+    </div>
+
+    <div class="stack-section">
+      <h3>Cybersecurity & red-teaming (foundational)</h3>
+      <p>Threat modeling; secure defaults; logging & monitoring</p>
+      <p>Ethical hacking fundamentals; Kali Linux; Metasploit (intro); Wireshark; OpenVAS</p>
+      <p>SAST/DAST basics; OWASP awareness; container image hardening</p>
+    </div>
+
+    <div class="stack-section">
+      <h3>Geospatial & routing</h3>
+      <p>OSRM routing on GCP VM; distance/isochrone pipelines</p>
+      <p>ipyleaflet maps; HTML heatmaps (pydeck-free)</p>
+    </div>
+
+    <div class="stack-section">
+      <h3>Media / audio ("waveform" data)</h3>
+      <p>Whisper STT pipelines; Audacity workflows; basic audio feature extraction</p>
+    </div>
+
+    <div class="stack-section">
+      <h3>Testing & QA</h3>
+      <p>Unit/integration tests for APIs & clients (pytest, xUnit)</p>
+      <p>Smoke tests / bash route tests for event pipelines</p>
+      <p>Data quality checks: schema, domain constraints; timestamped debug logs</p>
+    </div>
+
+    <div class="stack-section">
+      <h3>Operational tooling & content</h3>
+      <p>PowerPoint executive storytelling; KPI narrative design</p>
+      <p>Short training decks; video education with Whisper-based narration</p>
+      <p>Documentation in Markdown; reproducible environments and runbooks</p>
     </div>
   </section>
 
@@ -400,21 +524,36 @@ body {
   margin-top: 1rem;
 }
 
-/* Technology Tags */
-.tech-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1rem;
+/* Stack Sections */
+.stack-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--background-light);
+  border-radius: 6px;
+  border-left: 4px solid var(--secondary-color);
 }
 
-.tech-tag {
-  background-color: var(--secondary-color);
-  color: white;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 500;
+.stack-section h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.stack-section p {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.stack-section p:last-child {
+  margin-bottom: 0;
+}
+
+.stack-section strong {
+  color: var(--secondary-color);
+  font-weight: 600;
 }
 
 /* CTA Section */
