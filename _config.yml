@@ -1,5 +1,5 @@
 # Site settings
-title: Andrew M. Ignatov - Data Engineering & Analytics Leader
+title: Andrew M. Ihnativ - Data Engineering & Analytics Leader
 email: # Will be added via LinkedIn contact
 description: >-
   Senior Data Solutions Engineer specializing in secure, production-grade data platforms, 
@@ -10,11 +10,10 @@ url: "https://andrewmichael2020.github.io/personal-gh-page"
 
 # Author information
 author:
-  name: Andrew M. Ignatov
+  name: Andrew M. Ihnativ
   linkedin: https://www.linkedin.com/in/andrew-m-ignatov-879842146/
 
 # Build settings
-theme: minima
 markdown: kramdown
 
 # Collections

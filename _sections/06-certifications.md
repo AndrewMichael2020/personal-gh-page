@@ -4,7 +4,7 @@ section_id: certifications
 order: 6
 ---
 
-## Microsoft
+### Microsoft
 * AZ-900 Microsoft Azure Fundamentals (full cert)
 * AI-900 Microsoft Azure AI Fundamentals (full cert)
 * DP-900 Microsoft Azure Data Fundamentals (full cert)
@@ -18,11 +18,11 @@ order: 6
 * Microsoft Back-End Developer (professional cert)
 * Microsoft Full-Stack Developer (professional cert)
 
-## Google / AWS
+### Google / AWS
 * Machine Learning on Google Cloud Specialization (professional cert)
 * AWS Cloud Practitioner Essentials (comprehensive course)
 
-## IBM
+### IBM
 * IBM DevOps and Software Engineering Professional Certificate
 * IBM AI Developer Professional Certificate
 * **IBM RAG and Agentic AI series:**
@@ -41,7 +41,7 @@ order: 6
 * **IBM Ethical Hacking with Open Source Tools:**
   Intro to Ethical Hacking Principles; Ethical Hacking with Kali Linux; Exploitation & Pen Testing with Metasploit; Network Traffic Analysis with Wireshark; Incident Response & Defense with OpenVAS
 
-## Academic & other
+### Academic & other
 * MIT 6.S191 (2023) Introduction to Deep Learning
 * Data Science Specialization
 * Mathematics for Machine Learning Specialization
