@@ -28,12 +28,16 @@
     
     <!-- Smooth scrolling for anchor links -->
     <style>
+        :root {
+            --toc-height: 70px; /* adjust to match your sticky nav height */
+        }
+        
         html {
             scroll-behavior: smooth;
-            :root { --toc-height: 70px; } /* adjust to match your sticky nav height */
-            section[id] {
-              scroll-margin-top: calc(var(--toc-height) + 12px);
-            }
+        }
+        
+        section[id] {
+            scroll-margin-top: calc(var(--toc-height) + 12px);
         }
     </style>
 </head>
