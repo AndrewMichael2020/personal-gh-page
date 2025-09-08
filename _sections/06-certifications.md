@@ -11,8 +11,12 @@ order: 6
 * AI-900 Microsoft Azure AI Fundamentals (full cert)
 * DP-900 Microsoft Azure Data Fundamentals (full cert)
 * PL-300 / DA-100 Power BI Data Analyst Associate (full cert)
-* AZ-104 Azure Administrator Associate (comprehensive course)
-* DP-600T00-A Microsoft Fabric Analytics Engineer (comprehensive course)
+* * AZ-104 Azure Administrator Associate (comprehensive course)
+* DP-600 Microsoft Fabric Analytics Engineer (comprehensive course)
+* GH-100 GitHub Administration and Product Fundamentals
+* GH-200 Workflow Automation with GitHub Actions
+* GH-300 Github Copilot
+* GH-500 GitHub Advanced Security
 * DP-100 Designing and Implementing a Data Science Solution on Azure (comprehensive course)
 * DP-3014 Implementing a Machine Learning Solution with Azure Databricks (comprehensive course)
 * Power Automate in a Day (project)
