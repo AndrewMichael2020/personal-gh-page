@@ -5,16 +5,16 @@ order: 6
 ---
 
 ### Microsoft
-* Microsoft Back-End Developer Professional Certificate
-* Microsoft Full-Stack Developer Professional Certificate
+* **Microsoft Back-End Developer Professional Certificate**
+* **Microsoft Full-Stack Developer Professional Certificate**
 * AZ-900 Microsoft Azure Fundamentals (full cert)
 * AI-900 Microsoft Azure AI Fundamentals (full cert)
 * DP-900 Microsoft Azure Data Fundamentals (full cert)
 * PL-300 / DA-100 Power BI Data Analyst Associate (full cert)
 * AZ-104 Azure Administrator Associate (comprehensive course)
 * DP-600 Microsoft Fabric Analytics Engineer (comprehensive course)
-* GH-100 GitHub Administration and Product Fundamentals
-* GH-200 Workflow Automation with GitHub Actions
+* **GH-100 GitHub Administration**
+* **GH-200 Workflow Automation with GitHub Actions**
 * GH-300 Github Copilot
 * GH-500 GitHub Advanced Security
 * DP-100 Designing and Implementing a Data Science Solution on Azure (comprehensive course)
@@ -27,9 +27,9 @@ order: 6
 * AWS Cloud Practitioner Essentials (comprehensive course)
 
 ### IBM
-* IBM Full Stack Software Developer Professional Certificate
-* IBM DevOps and Software Engineering Professional Certificate
-* IBM AI Developer Professional Certificate
+* **IBM Full Stack Software Developer Professional Certificate**
+* **IBM DevOps and Software Engineering Professional Certificate**
+* **IBM AI Developer Professional Certificate**
 * **IBM RAG and Agentic AI Professional Certificate:**
   * Develop Generative AI Applications: Get Started
   * Build RAG Applications: Get Started
