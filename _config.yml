@@ -14,7 +14,17 @@ author:
   linkedin: https://www.linkedin.com/in/andrew-m-ignatov-879842146/
 
 # Build settings
+theme: minima
 markdown: kramdown
+
+# Collections
+collections:
+  sections:
+    output: false
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
 
 # Exclude files
 exclude:
@@ -29,10 +39,6 @@ header_pages:
 # SEO and social
 linkedin_username: andrew-m-ignatov-879842146
 github_username: AndrewMichael2020
-
-# Site navigation
-collections:
-  - sections
 
 # GitHub Pages settings
 repository: AndrewMichael2020/personal-gh-page

@@ -1,13 +1,13 @@
 ---
+title: Andrew M. Ignatov
 layout: default
-title: Andrew M. Ihnativ - Data Solutions Engineer
 ---
 
 <div class="hero-section">
   <div class="hero-content">
-    <img src="assets/images/profile.jpg" alt="Andrew M. Ihnativ" class="profile-image">
+    <img src="assets/images/profile.jpg" alt="Andrew M. Ignatov" class="profile-image">
     <div class="hero-text">
-      <h1>Andrew M. Ihnativ</h1>
+      <h1>Andrew M. Ignatov</h1>
       <p class="hero-subtitle">Data Solutions Engineer</p>
       <a href="https://www.linkedin.com/in/andrew-m-ignatov-879842146/" target="_blank" class="linkedin-btn">
         Connect on LinkedIn
@@ -16,354 +16,297 @@ title: Andrew M. Ihnativ - Data Solutions Engineer
   </div>
 </div>
 
-<nav class="page-nav">
+<nav class="toc">
   <ul>
-    <li><a href="#executive-summary">Executive Summary</a></li>
+    {% assign secs = site.sections | sort: "order" %}
+    {% for s in secs %}
+      <li><a href="#{{ s.section_id }}">{{ s.title }}</a></li>
+    {% endfor %}
     <li><a href="#core-strengths">Core Strengths</a></li>
     <li><a href="#impact-examples">Impact Examples</a></li>
     <li><a href="#what-i-bring">What I Bring</a></li>
-    <li><a href="#roles-targeting">Roles & Engagements</a></li>
-    <li><a href="#technologies">Technologies</a></li>
-    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#roles-engagements">Roles &amp; Engagements</a></li>
     <li><a href="#hiring-signals">Hiring Signals</a></li>
-    <li><a href="#next-step">Next Step</a></li>
   </ul>
 </nav>
 
-<main class="content">
-  <section id="executive-summary" class="content-section">
-    <h2>Executive summary</h2>
-    <p>I design and deliver secure, production-grade data platforms and real-time analytics that scale across enterprise environments. I partner with clinical, operations and executive stakeholders to turn high-volume sources into trusted metrics, automated workflows, and deployable systems — with governance, observability and measurable business impact. I lead cross-discipline delivery from prototype to CI/CD production and harden systems for compliance and reliability.</p>
-  </section>
+<main>
+  <!-- Render prose sections (Markdown files) -->
+  {% for s in secs %}
+    <section id="{{ s.section_id }}">
+      <h2>{{ s.title }}</h2>
+      {{ s.content }}
+    </section>
+  {% endfor %}
 
-  <section id="core-strengths" class="content-section">
+  <!-- Render YAML-driven sections -->
+  <section id="core-strengths">
     <h2>Core strengths</h2>
-    <div class="strengths-grid">
-      <div class="strength-item">
-        <h3>Data platform &amp; engineering</h3>
-        <p>• Ingest and normalize from databases, files, APIs, and streaming sources.<br>
-        • Lakehouse/warehouse design: partitioning, clustering, indexing, access controls.<br>
-        • Contract-driven schemas (DDL + data contracts), schema registry, reproducible backfills.<br>
-        • Performance tuning: columnar formats, cost controls, query plans, caching strategies.</p>
-      </div>
-      <div class="strength-item">
-        <h3>CI/CD &amp; reliability engineering</h3>
-        <p>• Build/test/release pipelines for data + services (GitHub Actions), artifact versioning, promotion gates.<br>
-        • Blue/green and canary deploys for services; rollback playbooks; environment parity (DevContainers, Codespaces, etc.).<br>
-        • Observability: structured logs, metrics, traces; SLOs/SLAs and error budgets for data products.<br>
-        • IaC for repeatable environments; runbooks and on-call procedures.</p>
-      </div>
-      <div class="strength-item">
-        <h3>Real-time &amp; streaming analytics</h3>
-        <p>• Streaming ingestion → lightweight compute → real-time tiles/alerts.<br>
-        • Backpressure, retry, and idempotency patterns; exactly-once or effectively-once delivery where required.<br>
-        • Operational diagnostics (KQL/notebooks), drill paths, and on-call handoffs.</p>
-      </div>
-      <div class="strength-item">
-        <h3>Agentic AI &amp; automation</h3>
-        <p>• LangGraph/AG2/CrewAI orchestrations: tool use, retrieval, and multi-step workflows with deterministic state machines.<br>
-        • Policy-guarded agents with audit logs, data-access boundaries, and prompt/response evaluation harnesses.<br>
-        • Batch &amp; real-time ML integration: feature extraction, scoring endpoints, monitoring for drift/latency.</p>
-      </div>
-      <div class="strength-item">
-        <h3>Security &amp; governance</h3>
-        <p>• Access controls: row-level security, dynamic masking, tokenization.<br>
-        • Secrets management, key rotation, least-privilege patterns; tamper-evident audit trails.<br>
-        • Data lineage, change logs, and compliance-ready documentation.</p>
-      </div>
-      <div class="strength-item">
-        <h3>BI &amp; visualization</h3>
-        <p>• Executive and shift-level dashboards with KPI hierarchies and drill-throughs.<br>
-        • Semantic models for self-service; printable exports and performance-optimized visuals.<br>
-        • Documentation: training decks, operational runbooks, training videos.</p>
-      </div>
-    </div>
+    {% for card in site.data.core_strengths %}
+      <h3>{{ card.title }}</h3>
+      <ul>
+        {% for b in card.bullets %}<li>{{ b }}</li>{% endfor %}
+      </ul>
+    {% endfor %}
   </section>
 
-  <section id="impact-examples" class="content-section">
+  <section id="impact-examples">
     <h2>Selected impact examples</h2>
-    <div class="impact-examples">
-      <div class="impact-item">
-        <h3>Semantic model + BI layer</h3>
-        <p>Replaced ad-hoc manual reporting with a semantic model and Power BI layer, automating recurring reports and reducing incoming manual report requests to the analytics team by an estimated ~80%, freeing analysts for higher-value work.</p>
-      </div>
-      <div class="impact-item">
-        <h3>Real-time operations</h3>
-        <p>Built a Pub/Sub → Cloud Run → BigQuery streaming pipeline and an executive cockpit in Power BI that moved bed-management reporting from daily batches to near-real-time dashboards, resulting in an estimated ~60% faster detection and resolution of capacity issues.</p>
-      </div>
-      <div class="impact-item">
-        <h3>Synthetic data & safe sandboxes</h3>
-        <p>Delivered privacy-safe analytics sandboxes and localized synthetic cohort generators to enable model development and validation in days rather than weeks, producing an estimated ~70% reduction in model dev/validation cycle time while preserving PHI residency and auditability.</p>
-      </div>
-      <div class="impact-item">
-        <h3>CI/CD & release reproducibility</h3>
-        <p>Implemented reproducible CI/CD pipelines (GitHub Actions) and hardened container images to standardize releases and recovery procedures, improving release predictability and reducing emergency hotfix events by an estimated ~65%.</p>
-      </div>
-      <div class="impact-item">
-        <h3>Agentic AI & tool orchestration</h3>
-        <p>Built agentic AI prototypes and LangGraph/LangChain-style orchestrations that automated document retrieval, triage and task orchestration for analysts, reducing manual query and triage time by an estimated ~50%.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="what-i-bring" class="content-section">
-    <h2>What I bring to a team</h2>
-    <div class="bring-grid">
-      <div class="bring-item">
-        <h3>Outcome orientation</h3>
-        <p>I focus on measurable business KPIs, clear SLAs, and demonstrable ROI for analytics investments.</p>
-      </div>
-      <div class="bring-item">
-        <h3>Cross-functional leadership</h3>
-        <p>I translate executive needs into technical roadmaps and mentor engineers to deliver reliable systems.</p>
-      </div>
-      <div class="bring-item">
-        <h3>Compliance-first engineering</h3>
-        <p>designs that meet privacy, residency and audit requirements while remaining pragmatic for delivery.</p>
-      </div>
-      <div class="bring-item">
-        <h3>Rapid prototyping to production</h3>
-        <p>proof-of-value in weeks, production hardening in months.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="roles-targeting" class="content-section">
-    <h2>Roles & engagements I'm targeting</h2>
-    <ul class="roles-list">
-      <li>Senior / Lead Data Solutions Engineer</li>
-      <li>Data Platforms Engineering Lead / Head of Data Platforms</li>
-      <li>Principal Data Engineer (real-time + security focus)</li>
+    <ul>
+      {% for ex in site.data.impact_examples %}
+        <li><strong>{{ ex.title }}</strong> — {{ ex.text }}</li>
+      {% endfor %}
     </ul>
+  </section>
+
+  <section id="what-i-bring">
+    <h2>What I bring to a team</h2>
+    {% for item in site.data.what_i_bring %}
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.text }}</p>
+    {% endfor %}
+  </section>
+
+  <section id="roles-engagements">
+    <h2>Roles &amp; engagements I'm targeting</h2>
+    <ul>{% for r in site.data.roles %}<li>{{ r }}</li>{% endfor %}</ul>
     <p class="location-note">Open to senior contract roles: remote or hybrid.</p>
   </section>
 
-  <section id="technologies" class="content-section">
-    <h2>Stack</h2>
-    
-    <div class="stack-section">
-      <h3>Managerial / product stack</h3>
-      <p>Requirements capture → KPI definition → semantic modeling</p>
-      <p>Road-mapping for data/ML projects; iteration plans</p>
-      <p>Privacy/compliance scoping; cost-conscious cloud architecture & run-rate control</p>
-      <p>Negotiation frameworks (Harvard PON)</p>
-      <p>Community engagement and technical demos (no hackathon planning)</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>Core languages</h3>
-      <p>Python 3.7–3.11</p>
-      <p>SQL (T-SQL)</p>
-      <p>C#</p>
-      <p>Java</p>
-      <p>JavaScript</p>
-      <p>Bash / Shell</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>Cloud platforms (primary → secondary)</h3>
-      <p><strong>Azure:</strong> Microsoft Fabric (Lakehouse, Dataflows), App Service, Azure SQL, Entra ID, Azure OpenAI (experience/planning), Functions (evaluating), Data Factory</p>
-      <p><strong>GCP:</strong> Cloud Run, Pub/Sub, BigQuery, Google Cloud Storage, Compute Engine (DL VM), Healthcare API (FHIR), Vertex AI (evaluating)</p>
-      <p><strong>IBM Cloud / OpenShift</strong> (coursework), <strong>AWS</strong> (limited exposure)</p>
-      <p><strong>AWS:</strong> Limited exposure</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>Data engineering & storage</h3>
-      <p>Lakehouse/warehouse design; partitioning, clustering, cost/perf tuning</p>
-      <p>Files/streams/APIs ingestion; contract-driven schemas; schema checks</p>
-      <p>Parquet/CSV on object storage; BigQuery datasets & streaming inserts</p>
-      <p>SQL Server; Azure SQL; PostgreSQL (planned); MySQL; SQLite; DuckDB</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>Analytics, Visualization & BI</h3>
-      <p>Power BI (modeling, DAX, Power Query, RLS, printable exports)</p>
-      <p>KQL / Azure Data Explorer (Fabric Real-Time Analytics)</p>
-      <p>Jupyter (local, Codespaces); Excel (advanced)</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>Real-time & streaming</h3>
-      <p>Pub/Sub → Cloud Run → BigQuery streaming</p>
-      <p>Power BI real-time tiles (push/streaming datasets)</p>
-      <p>Backpressure, sampling, idempotency; SLA-aware telemetry</p>
-      <p>KQL / notebooks for diagnostics</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>ML / AI</h3>
-      <p>TensorFlow; Keras</p>
-      <p>Batch & real-time ML pipelines; feature extraction</p>
-      <p>OpenAI API (function calling); embeddings; RAG</p>
-      <p>Whisper STT; diarization/turn-taking; basic audio features</p>
-      <p>Vector search: ChromaDB</p>
-      <p>Pattern extraction: fuzzy matching; regex-based extraction</p>
-      <p>Local LLM experiments (Llama-class on M2 Ultra / GCP VM)</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>Agentic AI & orchestration</h3>
-      <p>LangGraph (stateful graphs, multi-tool orchestration)</p>
-      <p>LangChain (RAG, tool use)</p>
-      <p>Langflow (DataStax) for visual pipelines</p>
-      <p>MCP servers (Model Context Protocol)</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>Healthcare interoperability (kept minimal, no terminology lists)</h3>
-      <p>Meditech and Intrahealth Profile workflows</p>
-      <p>FHIR R4</p>
-      <p>Google Cloud Healthcare API (FHIR Store)</p>
-      <p>Synthea synthetic EMR (localization & module editing; FHIR bundle export/ingest)</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>Backend & APIs</h3>
-      <p>FastAPI; Flask</p>
-      <p>ASP.NET Core (.NET 8) Minimal APIs; EF Core</p>
-      <p>JWT + ASP.NET Identity; role-based auth</p>
-      <p>REST / WebSocket endpoints; Postman collections</p>
-      <p>Node.js on Azure App Service (with Entra ID)</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>Frontend & visualization</h3>
-      <p>Power BI dashboards (executive/shift; drill-throughs)</p>
-      <p>React (course/projects)</p>
-      <p>Blazor WebAssembly (selected projects)</p>
-      <p>Notebook visuals; ipyleaflet maps; Kepler-style outputs (non-pydeck)</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>DevOps / CI/CD & platform engineering</h3>
-      <p>GitHub Actions (build, test, coverage/Cobertura, deploy)</p>
-      <p>GitHub Codespaces; DevContainers</p>
-      <p>Docker; Kubernetes (minikube/k3d); Helm; OpenShift (labs/Tekton)</p>
-      <p>Bash automation; gcloud CLI; jq; curl</p>
-      <p>Terraform (targeted, in progress)</p>
-      <p>Observability: structured logs, metrics (Prometheus/Grafana), traces</p>
-      <p>Release hardening; rollback playbooks; runbooks; SLAs/SLOs</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>Privacy, security & governance</h3>
-      <p>Entra ID (Azure AD); JWT; RBAC; secrets management; least-privilege</p>
-      <p>Dynamic Data Masking; Row-Level Security; tokenization/pseudonymization</p>
-      <p>k-anonymity / l-diversity / t-closeness checks; differential-privacy concepts</p>
-      <p>Audit trails; data residency constraints (PHI/PII)</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>Cybersecurity & red-teaming (foundational)</h3>
-      <p>Threat modeling; secure defaults; logging & monitoring</p>
-      <p>Ethical hacking fundamentals; Kali Linux; Metasploit (intro); Wireshark; OpenVAS</p>
-      <p>SAST/DAST basics; OWASP awareness; container image hardening</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>Geospatial & routing</h3>
-      <p>OSRM routing on GCP VM; distance/isochrone pipelines</p>
-      <p>ipyleaflet maps; HTML heatmaps (pydeck-free)</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>Media / audio ("waveform" data)</h3>
-      <p>Whisper STT pipelines; Audacity workflows; basic audio feature extraction</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>Testing & QA</h3>
-      <p>Unit/integration tests for APIs & clients (pytest, xUnit)</p>
-      <p>Smoke tests / bash route tests for event pipelines</p>
-      <p>Data quality checks: schema, domain constraints; timestamped debug logs</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>Operational tooling & content</h3>
-      <p>PowerPoint executive storytelling; KPI narrative design</p>
-      <p>Short training decks; video education with Whisper-based narration</p>
-      <p>Documentation in Markdown; reproducible environments and runbooks</p>
-    </div>
-  </section>
-
-  <section id="certifications" class="content-section">
-    <h2>Certifications & coursework</h2>
-    
-    <div class="stack-section">
-      <h3>Microsoft</h3>
-      <p>AZ-900 Microsoft Azure Fundamentals (full cert)</p>
-      <p>AI-900 Microsoft Azure AI Fundamentals (full cert)</p>
-      <p>DP-900 Microsoft Azure Data Fundamentals (full cert)</p>
-      <p>PL-300 / DA-100 Power BI Data Analyst Associate (full cert)</p>
-      <p>AZ-104 Azure Administrator Associate (comprehensive course)</p>
-      <p>DP-600T00-A Microsoft Fabric Analytics Engineer (comprehensive course)</p>
-      <p>DP-100 Designing and Implementing a Data Science Solution on Azure (comprehensive course)</p>
-      <p>DP-3014 Implementing a Machine Learning Solution with Azure Databricks (comprehensive course)</p>
-      <p>Power Automate in a Day (project)</p>
-      <p>Power Apps in a Day (project)</p>
-      <p>Microsoft Back-End Developer (professional cert)</p>
-      <p>Microsoft Full-Stack Developer (professional cert)</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>Google / AWS</h3>
-      <p>Machine Learning on Google Cloud Specialization (professional cert)</p>
-      <p>AWS Cloud Practitioner Essentials (comprehensive course)</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>IBM</h3>
-      <p>IBM DevOps and Software Engineering Professional Certificate</p>
-      <p>IBM AI Developer Professional Certificate</p>
-      <p><strong>IBM RAG and Agentic AI series:</strong><br>
-      • Develop Generative AI Applications: Get Started<br>
-      • Build RAG Applications: Get Started<br>
-      • Vector Databases for RAG: An Introduction<br>
-      • Advanced RAG with Vector Databases and Retrievers<br>
-      • Build Multimodal Generative AI Applications<br>
-      • Fundamentals of Building AI Agents<br>
-      • Agentic AI with LangChain and LangGraph<br>
-      • Agentic AI with LangGraph, CrewAI, AutoGen and BeeAI</p>
-      <p><strong>IBM Systems Analyst track:</strong><br>
-      Introduction to Systems Analysis; Business Analysis—Process Modeling & Requirements Gathering; Project & Stakeholder Management; Data Visualization & Dashboards with Excel & Cognos; IT Fundamentals; IT Systems Design & Analysis; Software Testing, Deployment & Maintenance Strategies</p>
-      <p><strong>IBM Data Architecture / Data Engineering track:</strong><br>
-      Intro to Data Engineering; Relational DBs; SQL Practical Intro; Linux & Shell Scripting; DBA; Data Warehouse Fundamentals; Intro to NoSQL; ETL & Pipelines with Shell/Airflow/Kafka; Intro to Big Data with Spark/Hadoop; Data Integration/Storage/Migration; Data Privacy/Security/GRC; Enterprise Data Architecture & Operations</p>
-      <p><strong>IBM Ethical Hacking with Open Source Tools:</strong><br>
-      Intro to Ethical Hacking Principles; Ethical Hacking with Kali Linux; Exploitation & Pen Testing with Metasploit; Network Traffic Analysis with Wireshark; Incident Response & Defense with OpenVAS</p>
-    </div>
-
-    <div class="stack-section">
-      <h3>Academic & other</h3>
-      <p>MIT 6.S191 (2023) Introduction to Deep Learning</p>
-      <p>Data Science Specialization</p>
-      <p>Mathematics for Machine Learning Specialization</p>
-      <p>Infectious Disease Modelling (project)</p>
-      <p>University of Michigan — C Programming for Everybody (Specialization: Exploring C; Programming in C; Data Structures in C; Building Objects in C)</p>
-      <p>Red Hat: Foundations of Red Hat Cloud-native Development; Fundamentals of Ansible; Fundamentals of Containers, Kubernetes and OpenShift; Fundamentals of Red Hat Enterprise Linux</p>
-    </div>
-  </section>
-
-  <section id="hiring-signals" class="content-section">
+  <section id="hiring-signals">
     <h2>Hiring signals I look for</h2>
-    <ul class="signals-list">
-      <li>Leadership remit over data platform or analytics products.</li>
-      <li>Clear ownership for delivery, governance and SLAs.</li>
-      <li>Teams ready to adopt CI/CD, observability and security practices.</li>
-      <li>Budget and executive sponsorship for operational analytics / ML initiatives.</li>
-    </ul>
-  </section>
-
-  <section id="next-step" class="content-section cta-section">
-    <h2>Next step</h2>
-    <p>If you're hiring for a senior role owning data platforms, real-time analytics, or ML delivery, message me on <a href="https://www.linkedin.com/in/andrew-m-ignatov-879842146/" target="_blank" class="linkedin-link">LinkedIn</a> with a short note about the team, scope, and top priorities.</p>
-    <div class="cta-buttons">
-      <a href="https://www.linkedin.com/in/andrew-m-ignatov-879842146/" target="_blank" class="cta-button">
-        Message on LinkedIn
-      </a>
-    </div>
+    <ul>{% for h in site.data.hiring_signals %}<li>{{ h }}</li>{% endfor %}</ul>
   </section>
 </main>
+
+<style>
+/* Professional color scheme - easily editable */
+:root {
+  --primary-color: #2c3e50;     /* Dark blue-gray */
+  --secondary-color: #3498db;   /* Professional blue */
+  --accent-color: #e74c3c;      /* LinkedIn red accent */
+  --text-primary: #2c3e50;     /* Dark gray for readability */
+  --text-secondary: #7f8c8d;   /* Medium gray */
+  --background-light: #f8f9fa;  /* Light gray background */
+  --background-white: #ffffff;  /* Pure white */
+  --border-color: #dee2e6;      /* Light border */
+  --shadow-color: rgba(0,0,0,0.1);
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-white);
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid rgba(255,255,255,0.2);
+  object-fit: cover;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  margin: 0 0 1.5rem 0;
+  opacity: 0.9;
+}
+
+.linkedin-btn {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.linkedin-btn:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Navigation */
+.toc {
+  background-color: var(--background-light);
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.toc ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.toc li {
+  margin: 0;
+}
+
+.toc a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.toc a:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+/* Main Content */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background-color: var(--background-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+section h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+}
+
+section h3 {
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+section ul {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+section li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+section li::before {
+  content: "▶";
+  color: var(--secondary-color);
+  position: absolute;
+  left: 0;
+}
+
+.location-note {
+  font-style: italic;
+  color: var(--text-secondary);
+  margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .toc ul {
+    padding: 0 1rem;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  section {
+    padding: 1.5rem;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .toc ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .toc a {
+    display: block;
+    text-align: center;
+    min-width: 200px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+}
+</style>
 
 <style>
 /* Professional color scheme - easily editable */
