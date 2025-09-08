@@ -52,7 +52,7 @@ order: 6
 * Fundamentals of Ansible
 
 ### Academic & Projects
-* MIT 6.S191 (2023) Introduction to Deep Learning
+* **MIT 6.S191 (2023) Introduction to Deep Learning**  -- MIT
 * C Programming Specialization: Exploring C; Programming in C; Data Structures in C; Building Objects in C -- University of Michigan
 * IBM Data Science Specialization
 * Mathematics for Machine Learning Specialization -- University College London
