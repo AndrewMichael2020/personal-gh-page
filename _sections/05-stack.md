@@ -13,19 +13,19 @@ order: 5
 
 ### Operational tooling & content
 * PowerPoint executive storytelling; KPI narrative design
-* Short training decks; video education with Whisper-based narration
 * Documentation in Markdown; reproducible environments and runbooks
+* Training decks, including generation of corporate training videos with TTS-based narration
 
 ### Core languages
-* Python 3.7–3.11
-* SQL (T-SQL)
+* Python 3.7–3.13
+* SQL (T-SQL, PostgreSQL, Oracle)
 * C#
-* Java
 * JavaScript
 * Bash / Shell
+* Java (foundational)
 
 ### Cloud platforms (primary → secondary)
-* **Azure:** Microsoft Fabric (Lakehouse, Dataflows), App Service, Azure SQL, Entra ID, Azure OpenAI (experience/planning), Functions (evaluating), Data Factory
+* **Azure:** Power BI Service and Power Platform for M365; EntraID, App Service, Azure SQL, Azure OpenAI, Functions; Microsoft Fabric (Lakehouse, Dataflows, etc.)
 * **GCP:** BigQuery, Google Cloud Storage, Compute Engine and Cloud Run, Vertex AI, Pub/Sub, Healthcare API (FHIR)
 * **IBM Cloud**: OpenShift
 * **AWS:** Limited exposure
@@ -39,7 +39,7 @@ order: 5
 ### Analytics, Visualization & BI
 * Power BI (modeling, DAX, Power Query, RLS, printable exports, federation and auditable sharing)
 * KQL in Azure Event Hub and Fabric Real-Time Analytics
-* Jupyter (local, Codespaces, other compute)
+* Jupyter (local, Codespaces, other computes)
 * Excel (as a power analytics tool for teams and integrated in Microsoft Power Platform)
 
 ### Real-time & streaming
@@ -67,7 +67,7 @@ order: 5
 * Meditech and Intrahealth Profile workflows
 * FHIR R4 standards and events handling
 * Google Cloud Healthcare API ("FHIR Store")
-* Tuning up and synthecizing EMR data with Synthea (localization & module editing; FHIR bundle export/ingest)
+* Tuning up and synthecizing EMR data with Synthea (localization & module editing; FHIR streaming and bundle export/ingest)
 
 ### Backend & APIs
 * FastAPI; Flask; others
