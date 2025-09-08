@@ -1,6 +1,6 @@
 ---
 title: Certifications & coursework
-id: certifications
+section_id: certifications
 order: 7
 ---
 

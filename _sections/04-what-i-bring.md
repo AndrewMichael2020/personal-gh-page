@@ -1,6 +1,6 @@
 ---
 title: What I bring to a team
-id: what-i-bring
+section_id: what-i-bring
 order: 4
 ---
 

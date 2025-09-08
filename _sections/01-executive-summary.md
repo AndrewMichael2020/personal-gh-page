@@ -1,6 +1,6 @@
 ---
 title: Executive summary
-id: executive-summary
+section_id: executive-summary
 order: 1
 ---
 

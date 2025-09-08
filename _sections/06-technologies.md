@@ -1,6 +1,6 @@
 ---
 title: Stack
-id: technologies
+section_id: technologies
 order: 6
 ---
 
