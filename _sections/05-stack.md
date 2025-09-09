@@ -75,6 +75,7 @@ order: 5
 * JWT + ASP.NET Identity; role-based auth
 * REST / WebSocket endpoints; Postman collections
 * Node.js on Azure App Service
+* Redis for request and result caching, sessions, and rate limiting
 
 ### Frontend & visualization
 * Power BI models, reports, apps, and dashboards with advanced analytical features (ML, flows, effect analysis)
@@ -89,7 +90,8 @@ order: 5
 * Bash automation; gcloud CLI; jq; curl
 * Terraform
 * Observability: structured logs, metrics (Prometheus + Grafana), traces
-* Release hardening; rollback playbooks; runbooks; SLAs/SLOs
+* Release hardening; rollback playbooks; runbooks
+* Rollback and canary policies validated under high-memory and hot-key scenarios
 
 ### Testing & QA
 * Unit/integration tests for APIs & clients (pytest, xUnit, others) with high coverage
