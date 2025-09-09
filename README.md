@@ -1,7 +1,6 @@
 # Personal GitHub Page
 
 This repository hosts a personal website implemented with GitHub Pages.  
-The focus here is on the technical setup and deployment rather than content.
 
 ## Implementation Details
 
