@@ -4,7 +4,7 @@ section_id: stack
 order: 5
 ---
 
-### Managerial / product stack
+### Managerial / pro* Tuning up and synthesized EMR data with Synthea (localization & module editing; FHIR streaming and bundle export/ingest)uct stack
 * Requirements capture → KPI definition → semantic modeling
 * Road-mapping for data/ML projects; iteration plans
 * Privacy/compliance scoping; cost-conscious cloud architecture & run-rate control
@@ -28,7 +28,7 @@ order: 5
 * **Azure:** Power BI Service and Power Platform for M365; EntraID, App Service, Azure SQL, Azure OpenAI, Functions; Microsoft Fabric (Lakehouse, Dataflows, etc.)
 * **GCP:** BigQuery, Google Cloud Storage, Compute Engine and Cloud Run, Vertex AI, Pub/Sub, Healthcare API (FHIR)
 * **IBM Cloud**: OpenShift
-* **AWS:** Limited exposure
+* Platforms like **Azure SQL, Microsoft Fabric, and BigQuery**
 
 ### Data engineering & storage
 * Lakehouse/warehouse design; partitioning, clustering, cost/perf tuning
@@ -42,9 +42,9 @@ order: 5
 * Jupyter (local, Codespaces, other computes)
 * Excel (as a power analytics tool for teams and integrated in Microsoft Power Platform)
 
-### Real-time & streaming
+### Streaming and timely updates
 * Pub/Sub → Cloud Run → BigQuery streaming
-* Power BI real-time pipelines and reports (push/streaming datasets)
+* Power BI streaming datasets and reports with timely updates
 * Backpressure, sampling, idempotency; SLA-aware telemetry,
 * KQL / notebooks for diagnostics and analytics workloads
 
@@ -84,7 +84,7 @@ order: 5
 * Notebook visuals; ipyleaflet maps; Kepler-style outputs 
 
 ### DevOps / CI/CD & platform engineering
-* GitHub Actions (build, test, secure, deploy)
+* Toolsets like **GitHub Actions, Azure DevOps, or Cloud Build** (build, test, secure, deploy)
 * GitHub Codespaces; DevContainers on Azure and GCP
 * Docker; Kubernetes (minikube/k3d); Helm; OpenShift (with Tekton)
 * Bash automation; gcloud CLI; jq; curl
@@ -104,10 +104,7 @@ order: 5
 * k-anonymity / l-diversity / t-closeness checks; differential-privacy concepts
 * Audit trails; data residency constraints for PII including PHI
 
-### Cybersecurity & red-teaming
-* Threat modeling; secure defaults; logging & monitoring
-* Ethical hacking fundamentals; Kali Linux; Metasploit (fundamentals); deep packet analysis with Wireshark; monitoring with OpenVAS
-* SAST/DAST basics; OWASP awareness, audits and testing; container image hardening
+
 
 ### Geospatial & routing
 * Azure and GCP routing APIs; OSRM routing; distance/isochrone pipelines

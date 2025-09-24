@@ -1,7 +1,7 @@
 ---
 title: Hiring Signals
 section_id: hiring-signals
-order: 8
+order: 9
 ---
 
 * Leadership remit over data platform or analytics products.

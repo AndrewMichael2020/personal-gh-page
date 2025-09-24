@@ -1,7 +1,7 @@
 ---
 title: Certifications
 section_id: certifications
-order: 6
+order: 7
 ---
 
 ### Microsoft
