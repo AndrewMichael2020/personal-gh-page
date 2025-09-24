@@ -30,7 +30,7 @@ order: 2
 
 * **Git and GitHub**: I am maintaining branch protection, Codeowners files, required reviews, and environment protections/approvals; I am using pull requests with checklists and ADR links so changes stay traceable.
 
-* **GitHub Actions **: I am building workflows for tests, linting, packaging, and gated deploys (matrix builds, environments, OIDC to Azure/GCP), with reusable workflow templates for consistency.
+* **GitHub Actions**: I am building workflows for tests, linting, packaging, and gated deploys (matrix builds, environments, OIDC to Azure/GCP), with reusable workflow templates for consistency.
 
 * **GitHub Advanced Security (when required)**: I am enabling Dependabot, secret scanning, and CodeQL; I am triaging findings, pinning versions, and adding mitigations and exceptions with documented rationale.
 

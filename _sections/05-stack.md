@@ -4,10 +4,11 @@ section_id: stack
 order: 5
 ---
 
-### Managerial / pro* Tuning up and synthesized EMR data with Synthea (localization & module editing; FHIR streaming and bundle export/ingest)uct stack
+### Managerial / product stack
 * Requirements capture → KPI definition → semantic modeling
 * Road-mapping for data/ML projects; iteration plans
 * Privacy/compliance scoping; cost-conscious cloud architecture & run-rate control
+* Tuning up and synthesizing medical, biological, and financial data
 * Negotiation frameworks (Harvard PON)
 * Community engagement and technical demos
 
@@ -67,7 +68,7 @@ order: 5
 * Meditech and Intrahealth Profile workflows
 * FHIR R4 standards and events handling
 * Google Cloud Healthcare API ("FHIR Store")
-* Tuning up and synthecizing EMR data with Synthea (localization & module editing; FHIR streaming and bundle export/ingest)
+* Tuning up and synthesizing EMR data with Synthea (localization & module editing; FHIR streaming and bundle export/ingest)
 
 ### Backend & APIs
 * FastAPI; Flask; others
@@ -100,7 +101,7 @@ order: 5
 
 ### Privacy, security & governance
 * Azure Entra ID; JWT; RBAC; secrets management; implementing least-privilege
-* Dynamic Data Masking or compelte hashing for sensitive data; Row-Level Security
+* Dynamic Data Masking or complete hashing for sensitive data; Row-Level Security
 * k-anonymity / l-diversity / t-closeness checks; differential-privacy concepts
 * Audit trails; data residency constraints for PII including PHI
 
@@ -111,5 +112,5 @@ order: 5
 * Deploying Open Street Map instances; ipyleaflet map visualizations; heatmaps in Power BI and other tools
 
 ### Media / audio ("waveform" data)
-* Fully synthecized video creation from prompts (such as producing world-class, LMNotebook-style videos for corporate training)
+* Fully synthesized video creation from prompts (such as producing world-class, LMNotebook-style videos for corporate training)
 * Whisper STT pipelines; Audacity workflows; basic audio feature extraction
