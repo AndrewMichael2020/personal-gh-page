@@ -18,11 +18,12 @@ order: 5
 * Training decks, including generation of corporate training videos with TTS-based narration
 
 ### Core languages
-* Python 3.7–3.13
-* SQL (T-SQL, PostgreSQL, Oracle)
-* C#
-* JavaScript
 * Bash / Shell
+* Python 3.2–3.13
+* SQL (T-SQL, PostgreSQL, MySQL, Oracle)
+* C#
+* C / C++
+* JavaScript
 * Java (foundational)
 
 ### Cloud platforms (primary → secondary)
