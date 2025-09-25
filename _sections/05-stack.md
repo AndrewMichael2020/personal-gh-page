@@ -5,11 +5,12 @@ order: 5
 ---
 
 ### Managerial / product stack
-* Requirements capture → KPI definition → semantic modeling
-* Road-mapping for data/ML projects; iteration plans
-* Privacy/compliance scoping; cost-conscious cloud architecture & run-rate control
+* Requirements capture → KPI definition → modeling → delivery (MIT Advanced Analytics Framework)
+* Roadmapping for data and ML projects; iteration plans and milestones
+* Privacy/compliance scoping; cost-conscious cloud architecture
 * Tuning up and synthesizing medical, biological, and financial data
-* Negotiation frameworks (Harvard PON)
+* Negotiation methods (Harvard Project of Negotiation)
+* Executive, board, investor, and regulator reports and presentations; decision-ready exhibits for public- and private-sector stakeholders
 * Community engagement and technical demos
 
 ### Operational tooling & content
@@ -18,19 +19,17 @@ order: 5
 * Training decks, including generation of corporate training videos with TTS-based narration
 
 ### Core languages
-* Bash / Shell
-* Python 3.2–3.13
+* Bash / Shell / PowerShell
+* Python 3.7–3.13 (historical exposure to 3.2 via coursework)
 * SQL (T-SQL, PostgreSQL, MySQL, Oracle)
 * C#
-* C / C++
-* JavaScript
-* Java (foundational)
+* C / C++ (foundational)
+* TypeScript / JavaScript
 
 ### Cloud platforms (primary → secondary)
 * **Azure:** Power BI Service and Power Platform for M365; EntraID, App Service, Azure SQL, Azure OpenAI, Functions; Microsoft Fabric (Lakehouse, Dataflows, etc.)
 * **GCP:** BigQuery, Google Cloud Storage, Compute Engine and Cloud Run, Vertex AI, Pub/Sub, Healthcare API (FHIR)
 * **IBM Cloud**: OpenShift
-* Platforms like **Azure SQL, Microsoft Fabric, and BigQuery**
 
 ### Data engineering & storage
 * Lakehouse/warehouse design; partitioning, clustering, cost/perf tuning
@@ -40,7 +39,7 @@ order: 5
 
 ### Analytics, Visualization & BI
 * Power BI (modeling, DAX, Power Query, RLS, printable exports, federation and auditable sharing)
-* KQL in Azure Event Hub and Fabric Real-Time Analytics
+* KQL in Azure Event Hubs and Fabric Real-Time Analytics
 * Jupyter (local, Codespaces, other computes)
 * Excel (as a power analytics tool for teams and integrated in Microsoft Power Platform)
 
@@ -52,7 +51,7 @@ order: 5
 
 ### ML / AI
 * TensorFlow; Keras
-* Batch & real-time ML pipelines; feature extraction
+* Batch & streaming ML pipelines; feature extraction
 * OpenAI API function calling; embeddings; RAG
 * Whisper STT; diarization/turn-taking; basic audio features
 * Vector search: ChromaDB, Cassandra / DataStax Astra DB
@@ -106,12 +105,10 @@ order: 5
 * k-anonymity / l-diversity / t-closeness checks; differential-privacy concepts
 * Audit trails; data residency constraints for PII including PHI
 
-
-
 ### Geospatial & routing
 * Azure and GCP routing APIs; OSRM routing; distance/isochrone pipelines
 * Deploying Open Street Map instances; ipyleaflet map visualizations; heatmaps in Power BI and other tools
 
 ### Media / audio ("waveform" data)
-* Fully synthesized video creation from prompts (such as producing world-class, LMNotebook-style videos for corporate training)
+* Fully synthesized video creation from prompts (such as producing LMNotebook-style videos for corporate training)
 * Whisper STT pipelines; Audacity workflows; basic audio feature extraction

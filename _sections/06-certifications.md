@@ -51,6 +51,9 @@ order: 7
 * Fundamentals of Containers, Kubernetes and OpenShift
 * Fundamentals of Ansible
 
+### NVIDIA
+* Fundamentals of Accelerated Computing with CUDA Python
+
 ### Academic & Projects
 * **MIT 6.S191 (2023) Introduction to Deep Learning**  -- MIT
 * C Programming Specialization: Exploring C; Programming in C; Data Structures in C; Building Objects in C -- University of Michigan

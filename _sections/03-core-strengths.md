@@ -16,15 +16,15 @@ order: 3
 * Observability structured logs, metrics, traces; SLOs/SLAs and error budgets for data products.
 * IaC for repeatable environments; runbooks and on-call procedures.
 
-### Real-time & Streaming Analytics
-* Streaming ingestion → lightweight compute → real-time tiles/alerts.
+### Streaming Analytics
+* Streaming ingestion → lightweight compute → streaming tiles/alerts.
 * Backpressure, retry, and idempotency patterns; exactly-once or effectively-once delivery where required.
 * Operational diagnostics (KQL/notebooks), drill paths, and on-call handoffs.
 
 ### Agentic AI & Automation
 * LangGraph/AG2/CrewAI orchestrations tool use, retrieval, and multi-step workflows with deterministic state machines.
 * Policy-guarded agents with audit logs, data-access boundaries, and prompt/response evaluation harnesses.
-* Batch & real-time ML integration feature extraction, scoring endpoints, monitoring for drift/latency.
+* Batch & streaming ML integration feature extraction, scoring endpoints, monitoring for drift/latency.
 
 ### Security & Governance
 * Access controls row-level security, dynamic masking, tokenization.
