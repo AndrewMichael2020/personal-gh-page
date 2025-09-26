@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.0"
+# Use github-pages gem instead of Jekyll directly for better compatibility
+gem "github-pages", group: :jekyll_plugins
 gem "csv"
 gem "logger"
 gem "base64"
