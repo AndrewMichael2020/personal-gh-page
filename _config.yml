@@ -41,3 +41,10 @@ github_username: AndrewMichael2020
 
 # GitHub Pages settings
 repository: AndrewMichael2020/personal-gh-page
+
+# GitHub Pages compatibility
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
